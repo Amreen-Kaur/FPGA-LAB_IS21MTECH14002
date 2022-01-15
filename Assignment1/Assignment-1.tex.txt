@@ -1,0 +1,81 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{karnaugh-map}
+\usetikzlibrary{calc}
+\usepackage{placeins}
+\usepackage{amsfonts}
+\usepackage{multicol}
+\usepackage{amssymb}
+\usepackage[framed]{matlab-prettifier}
+\usepackage{graphicx}
+\usepackage[margin=0.75in]{geometry}
+\usepackage{enumerate}
+\usepackage{circuitikz}
+
+\title{Assignment-1}
+\author{Amreen Kaur (IS21MTECH14002)}
+\date{15 January 2022}
+
+\begin{document}
+
+\maketitle
+
+\section{Question}
+Derive a Canonical POS expression for a Boolean function FN,
+represented by the following truth table : 
+
+\begin{center}
+\begin{tabular}{ |c|c|c|c| } 
+ \hline
+X & Y & Z & FN(X,Y,Z) \\ 
+0 & 0 & 0 & 1\\ 
+0 & 0 & 1 & 1\\ 
+0 & 1 & 0 & 0\\ 
+0 & 1 & 1 & 0\\ 
+1 & 0 & 0 & 1\\ 
+1 & 0 & 1 & 0\\ 
+1 & 1 & 0 & 0\\ 
+1 & 1 & 1 & 1\\ 
+
+ \hline
+\end{tabular}
+\end{center}
+
+\section{Answer}
+The  Canonical POS expression for the Boolean function FN can be represented as:$\pi$ M(2,3,5,6) and the expression is as follows:-
+
+\\The Boolean Function is: 
+
+\boxed{(X+Y'+Z).(X+Y'+Z').(X'+Y+Z').(X'+Y'+Z)}
+
+\\Now, the reduced or non-canonical form of the expression is as follows:-
+
+\\The Boolean Function is: 
+
+\boxed{(X+Y')(Y'+Z)(X'+Y+Z')}
+
+\\The reduced expression was obtained using the following k-map.
+
+
+
+\begin{figure}[!ht]
+\centering
+\resizebox{\columnwidth}{!}
+{
+\begin{karnaugh-map}[4][2][1][][]
+    \minterms{0,1,4,7}
+    \maxterms{2,3,5,6}
+    \implicant{3}{2}
+    \implicant{2}{6}
+    \implicant{5}{5}
+    \draw[color=blue, ultra thin] (0,2) --
+    node [pos=0.7, above right, anchor=south west] {$YZ$}
+    node [pos=0.7, below left, anchor=north east] {$X$} 
+    ++(130:1);
+    \end{karnaugh-map}
+}
+\end{figure}
+\end{document}
