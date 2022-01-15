@@ -161,3 +161,27 @@ int main()
 	
 	return 0;
 }
+
+/* Variables are:X Y Z
+
+ Enter 1 or 0 in the square 0 = 1
+
+ Enter 1 or 0 in the square 1 = 1
+
+ Enter 1 or 0 in the square 2 = 0
+
+ Enter 1 or 0 in the square 3 = 0
+
+ Enter 1 or 0 in the square 4 = 1
+
+ Enter 1 or 0 in the square 5 = 0
+
+ Enter 1 or 0 in the square 6 = 0
+
+ Enter 1 or 0 in the square 7 = 1
+
+ The Karnaugh Map is-
+ 1 1 0 0
+ 1 0 1 0
+  The boolean Function is:-(X+Y')(Y'+Z)(X'+Y+Z')
+  */
