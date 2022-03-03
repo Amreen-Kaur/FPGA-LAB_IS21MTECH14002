@@ -1,28 +1,28 @@
 #include <Arduino.h>
 
-int U=2,V=3,W=4;
+int X=2,Y=3,Z=4;
 int output;
 
 void setup()
 {
-pinMode(U, INPUT);
-pinMode(V, INPUT);
-pinMode(W, INPUT);
+pinMode(X, INPUT);
+pinMode(Y, INPUT);
+pinMode(Z, INPUT);
 pinMode(13, OUTPUT);
-
 }
-void loop()
-{int x=digitalRead(U);
- int y=digitalRead(V);
- int z=digitalRead(W);
-        
-        output=((!(x))||y) & ((!(y))||(!(z)));
 
+void loop()
+{int x=digitalRead(X);
+ int y=digitalRead(Y);
+ int z=digitalRead(Z);
+        int a= (!(!x && y ));
+        int b= (!(y && !z));
+        int c= (!(x && !y && z));
+        output=(!(!((!(!(a && b))) && (c))));
 if(output==1)
 digitalWrite(13,HIGH);
 else
 digitalWrite(13,LOW);
-
 }
 
 /*OUTPUT
