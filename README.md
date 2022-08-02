@@ -4,10 +4,12 @@ Designed a C Programme for obtaining Canonical and Non-Canonical Boolean Express
 
 https://github.com/Amreen-Kaur/FPGA-LAB_IS21MTECH14002/tree/main/Assignment1
 
-
 Assignment-1&2: Designed NAND Implementation of a given Boolean Expression on Arduino Uno Development Board.
 1. Implemented a NAND equivalent of a given Boolean Expression in Embbeded C on Arduino Uno using Platform IO in Linux
  via terminal and Termux(Linux on Phone).
+ 
+https://github.com/Amreen-Kaur/FPGA-LAB_IS21MTECH14002/tree/main/Assignment-2
+ 
 1. Implemented a NAND equivalent of a given Boolean Expression in AVR Assembly for Atmega 328P on Arduino Uno in
 Linux via terminal and Termux(Linux on Phone).
 
