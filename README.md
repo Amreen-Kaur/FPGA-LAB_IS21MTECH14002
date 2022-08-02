@@ -2,6 +2,8 @@
 Assignment-1: C Algorithm for obtaining Canonical and Non-Canonical Boolean Expressions, given any Truth Table of three Variables.
 Designed a C Programme for obtaining Canonical and Non-Canonical Boolean Expressions using Visual Studio Code.
 
+https://github.com/Amreen-Kaur/FPGA-LAB_IS21MTECH14002/tree/main/Assignment1
+
 
 Assignment-1&2: Designed NAND Implementation of a given Boolean Expression on Arduino Uno Development Board.
 1. Implemented a NAND equivalent of a given Boolean Expression in Embbeded C on Arduino Uno using Platform IO in Linux
