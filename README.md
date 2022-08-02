@@ -24,3 +24,4 @@ https://github.com/Amreen-Kaur/FPGA-LAB_IS21MTECH14002/tree/main/Assignment-5
 Assignment-6:  Implementation of Given Boolean Expression on ARM Cortex M4 of Pygmy(VAMAN SoC Board). 
 Developed the Design using C and generated the bin fle using GCC to program the ARM Cortex M4 using Quickfash.
 
+https://github.com/Amreen-Kaur/FPGA-LAB_IS21MTECH14002/tree/main/Assignment-6
